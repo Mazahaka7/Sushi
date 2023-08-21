@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import styles from "./Modal.module.css";
 
 const Backdrop = (props) => {
-  return <div className={styles.backdrop}></div>;
+  return <div className={styles.backdrop} onClick={props.onCloseCart} ></div>;
 };
 
 const ModalWindow = (props) => {
@@ -22,7 +22,7 @@ const Modal = (props) => {
     <>
       {ReactDOM.createPortal(
         <div>
-          <Backdrop />
+          <Backdrop onCloseCart={props.onClose} />
           <ModalWindow>{props.children}</ModalWindow>
         </div>,
         portalElement

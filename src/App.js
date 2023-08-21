@@ -1,17 +1,28 @@
-import React from "react";
+import React,{useState} from "react";
 import Meals from "./Meals/Meals";
 import Header from "./Layout/Header";
-import Modal from "./UI/Modal";
+import Cart from "./Cart/Cart";
+import CartContextProvider from "./store/CartContextProvider";
+
 
 function App() {
+  const [cartActive, setCartActive] = useState(false);
+  
+  const showCartHandler = () => {
+  setCartActive(true);
+  };
+  const hideCartHandler = () => {
+  setCartActive(false);
+  }
+  
   return (
-    <React.Fragment>
-      <Modal />
-      <Header />
+  <CartContextProvider>
+      {cartActive && <Cart onCloseCart={hideCartHandler} />}
+      <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
       </main>
-    </React.Fragment>
+  </CartContextProvider>
   );
 }
 
