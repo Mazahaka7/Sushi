@@ -3,7 +3,6 @@ import Card from ".././UI/Card";
 import MealItem from "./MealItem/MealItem";
 import styles from "./MealList.module.css";
 
-console.log(meals);
 const MealsList = () => {
   const mealList = meals.map((meal) => (
     <MealItem
