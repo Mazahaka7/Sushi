@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react_sushi/static/css/main.3cf26754.css",
+    "main.js": "/react_sushi/static/js/main.d3cc1472.js",
+    "static/media/sushi.jpg": "/react_sushi/static/media/sushi.3d9a0a8ad56e3850022d.jpg",
+    "index.html": "/react_sushi/index.html",
+    "main.3cf26754.css.map": "/react_sushi/static/css/main.3cf26754.css.map",
+    "main.d3cc1472.js.map": "/react_sushi/static/js/main.d3cc1472.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cf26754.css",
+    "static/js/main.d3cc1472.js"
+  ]
+}
